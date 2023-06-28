@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Grid Layout</title>
+
+<div class="header"></div>
+<body>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 2fr;
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            background-color: #4FC0D0;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item"><a href="#">Item 1</a></div>
+            <div class="grid-item"><a href="#">Item 2</a></div>
+            <div class="grid-item"><a href="#">Item 3</a></div>
+            <div class="grid-item"><a href="#">Item 4</a></div>
+        </div>
+    </body>
+
+</body>
+</html>
