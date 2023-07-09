@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>onmouseover and onmouseout event js</title>
+    </head>
+    <body>
+        <h1>Saat mouse digeser masuk ke area maka value akan berubah begitu pula saat mouse dikeluarkan</h1>
+        <h2 id='a' style="font-family:comic sans ms; font-size: 40px; color:red;" onmouseover="demo()"
+        onmouseout="demo1()">Tidak berubah</h2>
+
+        <!--here I used style tag of css to make it look different from upper h1-->
+
+    <script type="text/javascript">
+
+    function demo() {
+        document.getElementById('a').innerHTML = "onMouseover event applied";        
+    }
+    function demo1() {
+        document.getElementById('a').innerHTML = "onMouseout event applied";
+    }
+</script>
+    </body>
+</html>
