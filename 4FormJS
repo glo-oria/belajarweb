@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contoh Form Javascript</title>
+    </head>
+    <body>
+        <script>
+            function showPrompt() {
+                var name = prompt("Masukkan nama anda:");
+                if (name != null && name != ""){
+                    alert("Halo," + name + "! Selamat datang.");
+                } else {
+                    alert("Mohon masukkan nama anda:");
+                }
+            }
+
+            function showConfirmation() {
+                var result = confirm("Apakah anda yakin ingin menghapus data ini?");
+                if (result == true){
+                    alert("Data berhasil dihapus");
+                }else {
+                    alert("Penghapusan data dibatalkan");
+                }
+            }
+        </script>
+
+        <button onclick="alert('Ini adalah tombol alert');">Alert</button>
+        <button onclick="showPrompt();">Prompt</button>
+        <button onclick="showConfirmation();">Confirm</button>
+    </body>
+</html>
