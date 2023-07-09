@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Handling dengan JavaScript</title>
+</head>
+<body>
+
+<h2>Onload, onsubmit dan ondoubleclick event JS</h2>
+
+<form id="myForm">
+  <label for="name">Nama:</label>
+  <input type="text" id="name" required>
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+function showMessage() {
+  alert("Halaman telah dimuat.");
+}
+
+function changeText() {
+  document.getElementById('a').innerHTML = "Double-click event terjadi";
+}
+
+function submitForm(event) {
+  event.preventDefault();
+  var name = document.getElementById("name").value;
+  alert("Halo, " + name + "! Terima kasih atas submit form.");
+}
+
+document.onload = showMessage();
+document.getElementById("a").ondblclick = changeText;
+document.getElementById("myForm").onsubmit = submitForm;
+</script>
+
+</body>
+</html>
